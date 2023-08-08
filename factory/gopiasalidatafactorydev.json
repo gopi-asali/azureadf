@@ -1,0 +1,9 @@
+{
+	"name": "gopiasalidatafactorydev",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ad07fbba-dfd6-46c4-887f-f02f10f13627",
+		"tenantId": "3cba1441-b445-4c4f-a7a6-0cecd7752df8"
+	}
+}
