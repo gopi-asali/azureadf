@@ -1,0 +1,9 @@
+{
+	"name": "angloamericandatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b4aa9e49-c04c-4300-92cc-f3d0a10dc2a5",
+		"tenantId": "d52c9ea1-7c21-47b1-82a3-33a74b1f74b8"
+	}
+}
