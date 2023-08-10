@@ -2,7 +2,7 @@
 	"name": "DelimitedText",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorageLinkedService",
+			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -16,7 +16,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileSystem": "@dataset().FilePath"
+				"fileSystem": {
+					"value": "@dataset().FilePath",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
