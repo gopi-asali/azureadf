@@ -21,7 +21,8 @@
 						"TableName": "mytable"
 					},
 					"authentication": {
-						"type": "MSI"
+						"type": "MSI",
+						"resource": "https://storage.azure.com/"
 					}
 				}
 			}
