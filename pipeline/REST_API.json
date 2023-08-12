@@ -46,7 +46,7 @@
 				"typeProperties": {
 					"variableName": "current_Date",
 					"value": {
-						"value": "currentTimestamp()",
+						"value": "@utcNow()",
 						"type": "Expression"
 					}
 				}
