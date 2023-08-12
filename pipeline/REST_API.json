@@ -15,14 +15,10 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://gopidatastorage.table.core.windows.net/Tables",
+					"url": "https://gopidatastorage.table.core.windows.net/Tables?sv=2022-11-02&ss=t&srt=c&sp=rwdlacu&se=2023-08-12T08:01:18Z&st=2023-08-12T00:01:18Z&spr=https&sig=hAzehEJp49ygesEj0ksypZ1nGO2%2BHgmBPl4bgWr9X%2Fk%3D",
 					"method": "POST",
 					"body": {
 						"TableName": "mytable"
-					},
-					"authentication": {
-						"type": "MSI",
-						"resource": "https://storage.azure.com/"
 					}
 				}
 			}
