@@ -325,7 +325,7 @@
 								"accept": "application/json"
 							},
 							"body": {
-								"value": "@concat('{\"name\":\"Kavinayan1\",\"PartitionKey\":\"',variables('current_Date'),'\",\"RowKey\":\"myRowKey\"}')",
+								"value": "@concat('{\"name\":\"',pipeline().RunId,'\",\"PartitionKey\":\"',pipeline().TriggerId,'\",\"RowKey\":\"myRowKey\"}')",
 								"type": "Expression"
 							}
 						}
