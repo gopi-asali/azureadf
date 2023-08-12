@@ -62,6 +62,12 @@
 								"dependencyConditions": [
 									"Succeeded"
 								]
+							},
+							{
+								"activity": "Web2",
+								"dependencyConditions": [
+									"Succeeded"
+								]
 							}
 						],
 						"policy": {
@@ -73,7 +79,10 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"url": "https://gopidatastorage.table.core.windows.net/sampletable?sv=2022-11-02&ss=t&srt=o&sp=rwdlacu&se=2023-08-12T23:23:30Z&st=2023-08-12T15:23:30Z&spr=https&sig=lYAcl1zNL0GMFxWg262aLrEFdI02CM0Gck%2FZasCzS4s%3D",
+							"url": {
+								"value": "@concat('https://gopidatastorage.table.core.windows.net/sampletable?',activity('Web2').output.value)",
+								"type": "Expression"
+							},
 							"method": "POST",
 							"headers": {
 								"Content-Type": "application/json",
@@ -99,6 +108,28 @@
 							"value": {
 								"value": "@utcNow()",
 								"type": "Expression"
+							}
+						}
+					},
+					{
+						"name": "Web2",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": "https://gopiasalikeyvault.vault.azure.net/secrets/sastoken/99d5b2ad9d4243e5973259970364f798?api-version=7.0",
+							"method": "GET",
+							"headers": {},
+							"authentication": {
+								"type": "MSI",
+								"resource": "https://vault.azure.net"
 							}
 						}
 					}
@@ -201,34 +232,6 @@
 					"scope": "[parameters('sample trigger_properties_typeProperties_scope')]",
 					"events": [
 						"Microsoft.Storage.BlobCreated"
-					]
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/trigger1')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Stopped",
-				"type": "TumblingWindowTrigger",
-				"typeProperties": {
-					"frequency": "Minute",
-					"interval": 30,
-					"startTime": "2023-08-12T00:45:00Z",
-					"delay": "00:00:00",
-					"maxConcurrency": 50,
-					"retryPolicy": {
-						"intervalInSeconds": 30
-					},
-					"dependsOn": [
-						{
-							"type": "SelfDependencyTumblingWindowTriggerReference",
-							"size": "0.00:59:00",
-							"offset": "-0.00:30:00"
-						}
 					]
 				}
 			},
@@ -456,38 +459,6 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage1')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/Tumbling')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Started",
-				"pipeline": {
-					"pipelineReference": {
-						"referenceName": "REST_API",
-						"type": "PipelineReference"
-					},
-					"parameters": {}
-				},
-				"type": "TumblingWindowTrigger",
-				"typeProperties": {
-					"frequency": "Minute",
-					"interval": 30,
-					"startTime": "2023-08-12T11:00:00Z",
-					"endTime": "2023-08-12T12:00:00Z",
-					"delay": "00:00:00",
-					"maxConcurrency": 50,
-					"retryPolicy": {
-						"intervalInSeconds": 30
-					},
-					"dependsOn": []
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/REST_API')]"
 			]
 		},
 		{
