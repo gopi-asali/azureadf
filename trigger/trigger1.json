@@ -1,0 +1,25 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "File",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/audit/blobs/sample",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/118e5559-518e-4ae6-80a4-21138db5c374/resourceGroups/gopiasali_grp/providers/Microsoft.Storage/storageAccounts/gopidatastorage",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}
