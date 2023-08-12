@@ -26,6 +26,9 @@
 		"sample trigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/118e5559-518e-4ae6-80a4-21138db5c374/resourceGroups/gopiasali_grp/providers/Microsoft.Storage/storageAccounts/gopidatastorage"
 		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/118e5559-518e-4ae6-80a4-21138db5c374/resourceGroups/gopiasali_grp/providers/Microsoft.Storage/storageAccounts/gopidatastorage"
+		},
 		"containerUri": {
 			"value": ""
 		},
