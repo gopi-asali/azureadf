@@ -73,7 +73,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://gopiasalikeyvault.vault.azure.net/secrets/sastoken/4996260e8d844b758273d320878503ba",
+					"url": "https://gopiasalikeyvault.vault.azure.net/secrets/sastoken/4996260e8d844b758273d320878503ba?api-version=7.0",
 					"method": "GET",
 					"authentication": {
 						"type": "MSI",
