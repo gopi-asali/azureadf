@@ -360,7 +360,7 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"url": "https://gopiasalikeyvault.vault.azure.net/secrets/sastoken/99d5b2ad9d4243e5973259970364f798?api-version=7.0",
+							"url": "https://gopiasalikeyvault1.vault.azure.net/secrets/sastoken/e4fe2700c32b48f2ae7ee9c8a2c01f92?api-version=7.0",
 							"method": "GET",
 							"headers": {},
 							"authentication": {
