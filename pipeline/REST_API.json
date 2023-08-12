@@ -15,15 +15,13 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://gopidatastorage.table.core.windows.net/Tables?sv=2022-11-02&ss=t&srt=c&sp=rwdlacu&se=2023-08-12T08:01:18Z&st=2023-08-12T00:01:18Z&spr=https&sig=hAzehEJp49ygesEj0ksypZ1nGO2%2BHgmBPl4bgWr9X%2Fk%3D",
+					"url": "https://gopidatastorage.table.core.windows.net/sampletable?sv=2022-11-02&ss=t&srt=c&sp=rwdlacu&se=2023-08-12T08:01:18Z&st=2023-08-12T00:01:18Z&spr=https&sig=hAzehEJp49ygesEj0ksypZ1nGO2%2BHgmBPl4bgWr9X%2Fk%3D",
 					"method": "POST",
 					"headers": {
 						"Content-Type": "application/json",
 						"accept": "application/json"
 					},
-					"body": {
-						"TableName": "sampletable"
-					}
+					"body": "{  \n   \"name\": \"Kavinayan\"\n   \"PartitionKey\":\"mypartitionkey\",  \n   \"RowKey\":\"myrowkey\"  \n} "
 				}
 			}
 		],
