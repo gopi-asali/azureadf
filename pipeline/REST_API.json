@@ -1,0 +1,62 @@
+{
+	"name": "REST_API",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "Set variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://gopidatastorage.table.core.windows.net/sampletable?sv=2022-11-02&ss=t&srt=o&sp=rwdlacu&se=2023-08-12T23:23:30Z&st=2023-08-12T15:23:30Z&spr=https&sig=lYAcl1zNL0GMFxWg262aLrEFdI02CM0Gck%2FZasCzS4s%3D",
+					"method": "POST",
+					"headers": {
+						"Content-Type": "application/json",
+						"accept": "application/json"
+					},
+					"body": {
+						"value": "@concat('{\"name\":\"Kavinayan1\",\"PartitionKey\":\"',variables('current_Date'),'\",\"RowKey\":\"myRowKey\"}')",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "current_Date",
+					"value": {
+						"value": "@utcNow()",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"current_Date": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}
