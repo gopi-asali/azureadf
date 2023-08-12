@@ -29,7 +29,7 @@
 						"accept": "application/json"
 					},
 					"body": {
-						"value": "@concat('{\"name\":\"Kavinayan1\",\"PartitionKey\"=\"',variables('current_Date'),'\",\"RowKey\"=\"myRowKey\"}')",
+						"value": "@concat('{\"name\":\"Kavinayan1\",\"PartitionKey\":\"',variables('current_Date'),'\",\"RowKey\":\"myRowKey\"}')",
 						"type": "Expression"
 					}
 				}
