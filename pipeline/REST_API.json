@@ -11,6 +11,12 @@
 						"dependencyConditions": [
 							"Succeeded"
 						]
+					},
+					{
+						"activity": "Web2",
+						"dependencyConditions": [
+							"Succeeded"
+						]
 					}
 				],
 				"policy": {
@@ -22,7 +28,10 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://gopidatastorage.table.core.windows.net/sampletable?sv=2022-11-02&ss=t&srt=o&sp=rwdlacu&se=2023-08-12T23:23:30Z&st=2023-08-12T15:23:30Z&spr=https&sig=lYAcl1zNL0GMFxWg262aLrEFdI02CM0Gck%2FZasCzS4s%3D",
+					"url": {
+						"value": "@concat('https://gopidatastorage.table.core.windows.net/sampletable?',activity('Web2').output.value)",
+						"type": "Expression"
+					},
 					"method": "POST",
 					"headers": {
 						"Content-Type": "application/json",
@@ -50,6 +59,19 @@
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "Web2",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
 		"variables": {
