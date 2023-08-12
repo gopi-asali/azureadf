@@ -21,7 +21,11 @@
 						"Content-Type": "application/json",
 						"accept": "application/json"
 					},
-					"body": "{  \n   \"name\": \"Kavinayan\"\n   \"PartitionKey\":\"mypartitionkey\",  \n   \"RowKey\":\"myrowkey\"  \n} "
+					"body": {
+						"name": "Kavinayan",
+						"PartitionKey": "mypartitionkey",
+						"RowKey": "myrowkey"
+					}
 				}
 			}
 		],
