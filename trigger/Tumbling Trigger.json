@@ -1,0 +1,25 @@
+{
+	"name": "Tumbling Trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "REST_API",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2023-08-12T15:00:00Z",
+				"endTime": "2023-08-13T17:00:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
