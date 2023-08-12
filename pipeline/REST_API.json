@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"url": "https://gopidatastorage.table.core.windows.net/sampletable?sv=2022-11-02&ss=t&srt=o&sp=rwdlacu&se=2023-08-12T23:23:30Z&st=2023-08-12T15:23:30Z&spr=https&sig=lYAcl1zNL0GMFxWg262aLrEFdI02CM0Gck%2FZasCzS4s%3D",
-					"method": "POST",
+					"method": "PUT",
 					"headers": {
 						"Content-Type": "application/json",
 						"accept": "application/json"
