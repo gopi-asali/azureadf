@@ -71,7 +71,10 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://gopiasalikeyvault.vault.azure.net/secrets/sastoken/4996260e8d844b758273d320878503ba"
+				}
 			}
 		],
 		"variables": {
