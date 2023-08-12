@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "gopiasalidatafactorydev"
 		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
@@ -16,6 +19,12 @@
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://gopidatastorage.dfs.core.windows.net/"
+		},
+		"Hdfs1_properties_typeProperties_url": {
+			"value": "lkjdfklsd"
+		},
+		"sample trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/118e5559-518e-4ae6-80a4-21138db5c374/resourceGroups/gopiasali_grp/providers/Microsoft.Storage/storageAccounts/gopidatastorage"
 		},
 		"containerUri": {
 			"value": ""
