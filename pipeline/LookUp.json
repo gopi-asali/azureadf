@@ -71,13 +71,9 @@
 										"value": "name",
 										"activities": [
 											{
-												"name": "Set variable1",
-												"type": "SetVariable",
+												"name": "Append variable1",
+												"type": "AppendVariable",
 												"dependsOn": [],
-												"policy": {
-													"secureOutput": false,
-													"secureInput": false
-												},
 												"userProperties": [],
 												"typeProperties": {
 													"variableName": "name",
