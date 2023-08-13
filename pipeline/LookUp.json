@@ -57,16 +57,20 @@
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "Append variable1",
-							"type": "AppendVariable",
+							"name": "Switch1",
+							"type": "Switch",
 							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "name",
-								"value": {
-									"value": "@item().key",
+								"on": {
+									"value": "@item()",
 									"type": "Expression"
-								}
+								},
+								"cases": [
+									{
+										"value": "Case1"
+									}
+								]
 							}
 						}
 					]
