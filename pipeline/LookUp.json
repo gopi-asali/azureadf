@@ -63,12 +63,30 @@
 							"userProperties": [],
 							"typeProperties": {
 								"on": {
-									"value": "@item()",
+									"value": "@item().key",
 									"type": "Expression"
 								},
 								"cases": [
 									{
-										"value": "Case1"
+										"value": "name",
+										"activities": [
+											{
+												"name": "Set variable1",
+												"type": "SetVariable",
+												"dependsOn": [],
+												"policy": {
+													"secureOutput": false,
+													"secureInput": false
+												},
+												"userProperties": [],
+												"typeProperties": {
+													"variableName": "name",
+													"value": [
+														""
+													]
+												}
+											}
+										]
 									}
 								]
 							}
