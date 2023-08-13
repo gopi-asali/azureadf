@@ -31,7 +31,7 @@
 			"type": "string",
 			"defaultValue": "lkjdfklsd"
 		},
-		"sample trigger_properties_typeProperties_scope": {
+		"sample_trigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/118e5559-518e-4ae6-80a4-21138db5c374/resourceGroups/gopiasali_grp/providers/Microsoft.Storage/storageAccounts/gopidatastorage"
 		},
@@ -689,7 +689,7 @@
 				"typeProperties": {
 					"blobPathBeginsWith": "/audit/blobs/sample",
 					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('sample trigger_properties_typeProperties_scope')]",
+					"scope": "[parameters('sample_trigger_properties_typeProperties_scope')]",
 					"events": [
 						"Microsoft.Storage.BlobCreated"
 					]
