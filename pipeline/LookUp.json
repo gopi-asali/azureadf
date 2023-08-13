@@ -33,7 +33,8 @@
 						"parameters": {
 							"FilePath": "raw"
 						}
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
