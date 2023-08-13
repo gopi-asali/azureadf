@@ -28,7 +28,10 @@
 					},
 					"dataset": {
 						"referenceName": "DelimitedText",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"FilePath": "raw/config.csv"
+						}
 					}
 				}
 			}
