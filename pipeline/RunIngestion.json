@@ -36,7 +36,10 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"isSequential": false
+				}
 			}
 		],
 		"parameters": {
