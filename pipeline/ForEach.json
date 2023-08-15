@@ -117,13 +117,8 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "pipelineReturnValue",
-								"value": [
-									{
-										"key": ""
-									}
-								],
-								"setSystemVariable": true
+								"variableName": "",
+								"value": ""
 							}
 						}
 					],
@@ -156,6 +151,10 @@
 			"current_run_no": {
 				"type": "String",
 				"defaultValue": "1"
+			},
+			"itermediate": {
+				"type": "String",
+				"defaultValue": "0"
 			}
 		},
 		"annotations": []
