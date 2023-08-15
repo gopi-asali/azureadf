@@ -29,6 +29,11 @@
 				"userProperties": []
 			}
 		],
+		"parameters": {
+			"current_run": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
