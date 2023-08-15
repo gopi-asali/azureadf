@@ -117,8 +117,11 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "",
-								"value": ""
+								"variableName": "itermediate",
+								"value": {
+									"value": "@sub(variables('max_dependen'),1)",
+									"type": "Expression"
+								}
 							}
 						}
 					],
