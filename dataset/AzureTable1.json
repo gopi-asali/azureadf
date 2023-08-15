@@ -9,7 +9,7 @@
 		"type": "AzureTable",
 		"schema": [],
 		"typeProperties": {
-			"tableName": "test"
+			"tableName": "sampletable"
 		}
 	}
 }
