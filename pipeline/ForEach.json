@@ -66,12 +66,25 @@
 					],
 					"timeout": "0.12:00:00"
 				}
+			},
+			{
+				"name": "Set variable2",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
 		"variables": {
 			"max_dependen": {
 				"type": "String",
 				"defaultValue": "1"
+			},
+			"current_run_no": {
+				"type": "String"
 			}
 		},
 		"annotations": []
