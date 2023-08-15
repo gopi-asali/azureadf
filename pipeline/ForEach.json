@@ -3,18 +3,27 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Filter1",
-				"type": "Filter",
-				"dependsOn": [],
-				"userProperties": []
-			},
-			{
 				"name": "ForEach1",
 				"type": "ForEach",
 				"dependsOn": [],
 				"userProperties": []
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
+		"variables": {
+			"max_dependen": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
