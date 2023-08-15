@@ -211,6 +211,7 @@
 				}
 			}
 		],
+		"concurrency": 1,
 		"variables": {
 			"max_dependen": {
 				"type": "String",
