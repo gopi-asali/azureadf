@@ -119,7 +119,7 @@
 							"typeProperties": {
 								"variableName": "itermediate",
 								"value": {
-									"value": "@sub(variables('max_dependen'),1)",
+									"value": "@sub(int(variables('max_dependen')),1)",
 									"type": "Expression"
 								}
 							}
