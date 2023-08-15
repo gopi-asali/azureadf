@@ -179,7 +179,10 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "current_run_no",
-								"value": ""
+								"value": {
+									"value": "@variables('itermediate')",
+									"type": "Expression"
+								}
 							}
 						}
 					],
