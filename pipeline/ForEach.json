@@ -37,12 +37,11 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "AzureSqlSource",
-						"queryTimeout": "02:00:00",
-						"partitionOption": "None"
+						"type": "AzureTableSource",
+						"azureTableSourceIgnoreTableNotFound": false
 					},
 					"dataset": {
-						"referenceName": "AzureSqlTable",
+						"referenceName": "AzureTable1",
 						"type": "DatasetReference"
 					}
 				}
