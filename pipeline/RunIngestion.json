@@ -38,6 +38,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('Lookup1').output.firstRow",
+						"type": "Expression"
+					},
 					"isSequential": false
 				}
 			}
