@@ -130,11 +130,17 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "max_dependen",
-								"value": {
-									"value": "@variables('itermediate')",
-									"type": "Expression"
-								}
+								"variableName": "pipelineReturnValue",
+								"value": [
+									{
+										"key": "max_dependen",
+										"value": {
+											"type": "String",
+											"content": "0"
+										}
+									}
+								],
+								"setSystemVariable": true
 							}
 						},
 						{
