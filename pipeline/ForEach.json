@@ -3,12 +3,6 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "ForEach1",
-				"type": "ForEach",
-				"dependsOn": [],
-				"userProperties": []
-			},
-			{
 				"name": "Set variable1",
 				"type": "SetVariable",
 				"dependsOn": [],
@@ -16,12 +10,17 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "max_dependen",
+					"value": "3"
+				}
 			}
 		],
 		"variables": {
 			"max_dependen": {
-				"type": "String"
+				"type": "String",
+				"defaultValue": "1"
 			}
 		},
 		"annotations": []
