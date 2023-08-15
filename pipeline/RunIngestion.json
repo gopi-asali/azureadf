@@ -22,7 +22,8 @@
 					"dataset": {
 						"referenceName": "AzureTable1",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
