@@ -292,7 +292,7 @@
 				"type": "AzureTable",
 				"schema": [],
 				"typeProperties": {
-					"tableName": "test"
+					"tableName": "sampletable"
 				}
 			},
 			"dependsOn": [
@@ -339,6 +339,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "config.csv",
 						"fileSystem": {
 							"value": "@dataset().FilePath",
 							"type": "Expression"
@@ -346,6 +347,7 @@
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
+					"firstRowAsHeader": true,
 					"quoteChar": "\""
 				},
 				"schema": []
@@ -498,7 +500,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Started",
+				"runtimeState": "Stopped",
 				"pipeline": {
 					"pipelineReference": {
 						"referenceName": "REST_API",
