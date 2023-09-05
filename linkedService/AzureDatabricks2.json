@@ -20,7 +20,8 @@
 			"newClusterInitScripts": [],
 			"PolicyId": "001070FF1799C5B4",
 			"cluster_type": "all-purpose"
-		}
+		},
+		"cluster_type": "all-purpose"
 	},
 	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
