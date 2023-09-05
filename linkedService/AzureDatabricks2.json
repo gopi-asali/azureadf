@@ -18,7 +18,7 @@
 			"newClusterVersion": "10.4.x-scala2.12",
 			"clusterOption": "Autoscaling",
 			"newClusterInitScripts": [],
-			"PolicyId": "000B246F3B4201B9"
+			"PolicyId": "001070FF1799C5B4"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/linkedservices"
