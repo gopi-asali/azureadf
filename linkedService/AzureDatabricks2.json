@@ -14,7 +14,7 @@
 				"secretName": "Databricks-AccessToken"
 			},
 			"newClusterNodeType": "Standard_DS3_v2",
-			"newClusterNumOfWorker": "1",
+			"newClusterNumOfWorker": "2",
 			"newClusterVersion": "10.4.x-scala2.12",
 			"clusterOption": "Fixed",
 			"newClusterInitScripts": [],
