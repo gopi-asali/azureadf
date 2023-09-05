@@ -18,7 +18,7 @@
 					"notebookPath": "/Users/gopimec22@gmail.com/describe"
 				},
 				"linkedServiceName": {
-					"referenceName": "AzureDatabricks1",
+					"referenceName": "AzureDatabricks2",
 					"type": "LinkedServiceReference"
 				}
 			}
