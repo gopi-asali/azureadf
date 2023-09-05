@@ -20,6 +20,9 @@
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://gopidatastorage.dfs.core.windows.net/"
 		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://gopiasalikeyvault1.vault.azure.net/"
+		},
 		"Hdfs1_properties_typeProperties_url": {
 			"value": "lkjdfklsd"
 		},
