@@ -18,7 +18,7 @@
 			"newClusterVersion": "10.4.x-scala2.12",
 			"clusterOption": "Autoscaling",
 			"newClusterInitScripts": [],
-			"PolicyId": "001070FF1799C5B4",
+			"PolicyId": "000B246F3B4201B9",
 			"cluster_type": "all-purpose"
 		},
 		"cluster_type": "all-purpose"
