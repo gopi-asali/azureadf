@@ -23,5 +23,6 @@
 		},
 		"cluster_type": "all-purpose"
 	},
+	"cluster_type": "all-purpose",
 	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
